@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Disappearing Ninja" content="Click to make the ninjas disappear!">
+    <title>Disappearing Ninjas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Disappearing_Ninja.css">
+
+    <script>
+        $(document).ready(function () {
+            $('img').click(function () {
+                $(this).fadeOut(1000)
+            });
+            $('button').click(function(){
+                $('img').fadeIn(1000)
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>jQuery - assignment 1</h1>
+    <div class="ninja">
+        <img src="tmnt.jpg" alt="An Image">
+        <img src="tmnt.jpg" alt="An Image">
+        <img src="tmnt.jpg" alt="An Image">
+        <img src="tmnt.jpg" alt="An Image">
+    </div>
+    <div class="ninja">
+        <img src="tmnt.jpg" alt="An Image">
+        <img src="tmnt.jpg" alt="An Image">
+        <img src="tmnt.jpg" alt="An Image">
+        <img src="tmnt.jpg" alt="An Image">
+    </div>
+    <button>Restore</button>
+
+</body>
+
+</html>
